@@ -25,7 +25,7 @@ endif
 syntax case ignore
 
 syntax region  javascriptDocComment            start="/\*\*"  end="\*/" contains=javascriptDocNotation,javascriptCommentTodo,@Spell fold keepend
-syntax match   javascriptDocNotation           contained /\W@/ nextgroup=javascriptDocTags
+" syntax match   javascriptDocNotation           contained /\W@/ nextgroup=javascriptDocTags
 
 syntax keyword javascriptDocTags               contained constant constructor constructs function ignore inner private public readonly static
 syntax keyword javascriptDocTags               contained const dict expose inheritDoc interface nosideeffects override protected struct
